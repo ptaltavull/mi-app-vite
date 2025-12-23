@@ -1,73 +1,42 @@
 # React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Proyecto frontend construido con **React**, **Vite** y **TypeScript**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🧱 Stack utilizado
 
-## React Compiler
+### Core
+- **React**
+- **Vite**
+- **TypeScript**
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Routing & Data
+- **React Router** – enrutado de la aplicación
+- **TanStack Query** – gestión de estado remoto, caching y control de cargas/errores
+- **Axios** – cliente HTTP para llamadas a APIs
 
-## Expanding the ESLint configuration
+### UI & Styles
+- **Tailwind CSS** – utilidades CSS para estilos rápidos y consistentes
+- **shadcn/ui** – componentes accesibles y reutilizables basados en Radix UI
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### Validación & Errores
+- **Zod** – validación y tipado de datos en runtime
+- **Manejo global de errores** – centralización de errores de red y dominio
+- **Toasts globales** – feedback visual para errores y estados
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### Idiomas
+- **react-i18next** – internacionalización y gestión de idiomas
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### Calidad de código
+- **ESLint** – análisis estático para detectar errores y malas prácticas
+- **Prettier** – formato automático y consistente del código
+- **Husky + lint-staged** – ejecución automática de ESLint y Prettier antes de cada commit
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🚀 Cómo iniciar el proyecto
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+```bash
+npm install
+npm run dev
