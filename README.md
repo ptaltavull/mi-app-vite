@@ -22,8 +22,6 @@ Proyecto frontend construido con **React**, **Vite** y **TypeScript**.
 
 ### Validación & Errores
 - **Zod** – validación y tipado de datos en runtime
-- **Manejo global de errores** – centralización de errores de red y dominio
-- **Toasts globales** – feedback visual para errores y estados
 
 ### Idiomas
 - **react-i18next** – internacionalización y gestión de idiomas
