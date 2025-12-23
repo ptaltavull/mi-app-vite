@@ -72,6 +72,23 @@ i18n.use(initReactI18next).init({
               description: 'Internacionalización para soporte multilingüe',
               documentation: 'https://www.i18next.com/',
             },
+            {
+              name: 'ESLint',
+              description:
+                'Análisis estático de código para encontrar y arreglar problemas',
+              documentation: 'https://eslint.org/',
+            },
+            {
+              name: 'Prettier',
+              description: 'Formateador de código para mantener consistencia',
+              documentation: 'https://prettier.io/',
+            },
+            {
+              name: 'Husky',
+              description:
+                'Git hooks para mejorar los commits y mantener la calidad del código',
+              documentation: 'https://typicode.github.io/husky/',
+            },
           ],
         },
       },
@@ -135,6 +152,21 @@ i18n.use(initReactI18next).init({
               name: 'i18n',
               description: 'Internationalization for multi-language support',
               documentation: 'https://www.i18next.com/',
+            },
+            {
+              name: 'ESLint',
+              description: 'Static code analysis to find and fix problems',
+              documentation: 'https://eslint.org/',
+            },
+            {
+              name: 'Prettier',
+              description: 'Code formatter for consistent style',
+              documentation: 'https://prettier.io/',
+            },
+            {
+              name: 'Husky',
+              description: 'Git hooks for better commits and code quality',
+              documentation: 'https://typicode.github.io/husky/',
             },
           ],
         },
